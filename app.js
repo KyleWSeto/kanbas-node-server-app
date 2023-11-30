@@ -13,7 +13,7 @@ mongoose.connect(CONNECTION_STRING);
 const app = express();
 app.use(cors({
     credentials: true,
-    origin: "*",
+    origin: ['http://localhost:3000', 'https://a6--aesthetic-chimera-abb28e.netlify.app'],
  }));
  const sessionOptions = {
     secret: "any string",
